@@ -10,6 +10,10 @@ import Signup from "./pages/Signup";
 import PlantInfo from "./pages/PlantInfo";
 import Weather from "./pages/Weather";
 import MarketPrices from "./pages/MarketPrices";
+import News from "./pages/News";
+import Schemes from "./pages/Schemes";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +32,10 @@ const App = () => (
             <Route path="plant-info" element={<PlantInfo />} />
             <Route path="weather" element={<Weather />} />
             <Route path="market-prices" element={<MarketPrices />} />
+            <Route path="news" element={<News />} />
+            <Route path="schemes" element={<Schemes />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="about" element={<About />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           </Route>
           <Route path="*" element={<NotFound />} />
